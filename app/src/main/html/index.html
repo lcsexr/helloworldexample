@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+function soyAlerta() {
+var text=document.getElementById("firstname").value+document.getElementById("lastname").value;
+if !(/^[a-zA-Z0-9.]*$/.test(text)){
+return alert("Conntiene caracteres especiales");
+}
+return alert("Nombre: "+ text);
+
+}
+</script>
+</head>
+<body >
+<form>
+    First name:<br>
+    <input type="text" id="firstname" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" id="lastname" name="lastname">
+    <button onclick="soyAlerta()">Hola</button>
+</form>
